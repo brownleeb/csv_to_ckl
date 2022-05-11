@@ -12,3 +12,5 @@ Not all fields needed in a checklist file (xml format) can be determined from th
 Formatting of discussion, check text, fix text, etc still needs to be fine tuned
 
 I have found some STIGs with non-"UTF-8" characters in them.
+
+STIG Viewer puts a line on header and footer with classificaiton info on spreadsheet that needs to be manually deleted.  The column headers need to be loeft in.
