@@ -10,3 +10,5 @@ This is a work in progress:
 Not all fields needed in a checklist file (xml format) can be determined from the csv file.  Things like STIGID and FILENAME are not in the export.  UUID and TargetKey dont seem to matter that much for importing generated ckl files.
 
 Formatting of discussion, check text, fix text, etc still needs to be fine tuned
+
+I have found some STIGs with non-"UTF-8" characters in them.
