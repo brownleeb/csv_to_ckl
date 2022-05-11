@@ -37,6 +37,10 @@ in_csv=sys.argv[1]
 #with open (in_csv,encoding='windows-1252') as f:
 with open (in_csv) as f:
     lines=f.read().replace('&','&amp;').replace('<','&lt;').replace('>','&gt;').splitlines()
+if lines[0].find('"~~~~~   CUI   ~~~~~"')>=0:
+    del lines[0]
+if lines[-1].find('"~~~~~   CUI   ~~~~~"')>=0:
+    del lines[-1]
 reader=csv.reader(lines)
 rows=list(reader)
 stig=''
